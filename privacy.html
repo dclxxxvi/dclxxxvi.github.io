@@ -10,7 +10,7 @@
 <main>
   <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
   <h1>Privacy Policy</h1>
-  <p class="muted">BEYOND FRAME · Effective date: November 23, 2026</p>
+  <p class="muted">BEYOND FRAME · Effective date: November 24, 2026</p>
 
   <p>This Privacy Policy describes how the <strong>BEYOND FRAME</strong> application (“the app”, “we”) accesses,
     uses, stores, shares and deletes data, including data received from Google APIs. The app is a desktop application
@@ -30,19 +30,27 @@
       <td>Permission to upload videos to the connected channel, and the id of each uploaded video</td>
       <td>To upload the video file with the title, description, tags and privacy setting the person confirmed</td></tr>
     <tr><td><code>https://www.googleapis.com/auth/youtube.readonly</code></td>
-      <td>The connected channel's id and title; the upload/processing status and privacy status of videos the app uploaded</td>
-      <td>To show which channel is connected, whether each upload finished processing, and the link to the video</td></tr>
+      <td>The connected channel's id and title; the upload/processing status, privacy status and statistics (view, like
+        and comment counts) of videos the app uploaded</td>
+      <td>To show which channel is connected, whether each upload finished processing, the link to the video and how it
+        performs</td></tr>
+    <tr><td><code>https://www.googleapis.com/auth/youtube.force-ssl</code></td>
+      <td>Permission to delete a video; used only for videos the app uploaded</td>
+      <td>To delete a video the app uploaded when the person clicks “Delete” for that video and confirms it. The app never
+        deletes or edits anything else</td></tr>
     <tr><td>OAuth tokens</td>
       <td>Access token and refresh token issued by Google</td>
       <td>To make the API calls above without asking the owner to sign in every time</td></tr>
   </table>
   <p>The app does <strong>not</strong> access the Google account's e-mail, contacts, profile details beyond the
-    channel title, other videos, comments, playlists, subscribers, watch history or analytics.</p>
+    channel title, other videos, the content of comments, playlists, subscribers, watch history or YouTube Analytics
+    reports.</p>
 
   <h3>Meta (Instagram) data</h3>
   <p>The list of Facebook Pages managed by the signed-in owner, the id and username of the Instagram professional
-    account linked to the chosen Page, a Page access token, and the ids/links of media the app published — used only
-    to publish the confirmed Reel and show its link.</p>
+    account linked to the chosen Page, a Page access token, the ids/links of media the app published, and the like,
+    comment, view, reach, save and share counts of those media — used only to publish the confirmed Reel, show its
+    link and statistics, and delete a Reel the app published when the person clicks “Delete” and confirms it.</p>
 
   <h3>TikTok data</h3>
   <p>The account's open id and display name and OAuth tokens — used only to send the confirmed video to the
@@ -52,8 +60,8 @@
   <p>The video files and texts (title, description, hashtags) that the team prepared for publishing.</p>
 
   <h2>3. How the data is used</h2>
-  <p>Data is used only to provide the app's single feature: uploading the team's reviewed videos to the team's own
-    accounts and reporting the result. It is <strong>not</strong> used for advertising, marketing, profiling, analytics,
+  <p>Data is used only to provide the app's feature: uploading the team's reviewed videos to the team's own
+    accounts, reporting the result and statistics of those videos, and deleting them on request. It is <strong>not</strong> used for advertising, marketing, profiling, analytics,
     credit or lending decisions, and it is not used to develop, improve or train artificial intelligence or machine
     learning models. Nobody reads the data except the BEYOND FRAME team member operating the app, and only to publish
     and check the team's own videos.</p>
