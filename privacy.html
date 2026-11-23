@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — BEYOND FRAME</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+  <h1>Privacy Policy</h1>
+  <p class="muted">BEYOND FRAME · Effective date: November 23, 2026</p>
+
+  <p>This Privacy Policy describes how the <strong>BEYOND FRAME</strong> application (“the app”, “we”) accesses,
+    uses, stores, shares and deletes data, including data received from Google APIs. The app is a desktop application
+    used by the BEYOND FRAME team to publish its own 3D animated videos to its own YouTube channel, Instagram account
+    and TikTok account after a person reviews and confirms each upload.</p>
+
+  <h2>1. Who the app is for</h2>
+  <p>The app is used only by the BEYOND FRAME team with accounts the team owns. It has no public sign-up, no user
+    accounts and no server: it runs on the team's own computer. It does not collect data about viewers, followers or
+    any other people.</p>
+
+  <h2>2. Data the app accesses</h2>
+  <h3>Google user data (YouTube)</h3>
+  <table>
+    <tr><th>Permission (scope)</th><th>Data accessed</th><th>Why</th></tr>
+    <tr><td><code>https://www.googleapis.com/auth/youtube.upload</code></td>
+      <td>Permission to upload videos to the connected channel, and the id of each uploaded video</td>
+      <td>To upload the video file with the title, description, tags and privacy setting the person confirmed</td></tr>
+    <tr><td><code>https://www.googleapis.com/auth/youtube.readonly</code></td>
+      <td>The connected channel's id and title; the upload/processing status and privacy status of videos the app uploaded</td>
+      <td>To show which channel is connected, whether each upload finished processing, and the link to the video</td></tr>
+    <tr><td>OAuth tokens</td>
+      <td>Access token and refresh token issued by Google</td>
+      <td>To make the API calls above without asking the owner to sign in every time</td></tr>
+  </table>
+  <p>The app does <strong>not</strong> access the Google account's e-mail, contacts, profile details beyond the
+    channel title, other videos, comments, playlists, subscribers, watch history or analytics.</p>
+
+  <h3>Meta (Instagram) data</h3>
+  <p>The list of Facebook Pages managed by the signed-in owner, the id and username of the Instagram professional
+    account linked to the chosen Page, a Page access token, and the ids/links of media the app published — used only
+    to publish the confirmed Reel and show its link.</p>
+
+  <h3>TikTok data</h3>
+  <p>The account's open id and display name and OAuth tokens — used only to send the confirmed video to the
+    account's TikTok inbox as a draft and show the upload status.</p>
+
+  <h3>Files</h3>
+  <p>The video files and texts (title, description, hashtags) that the team prepared for publishing.</p>
+
+  <h2>3. How the data is used</h2>
+  <p>Data is used only to provide the app's single feature: uploading the team's reviewed videos to the team's own
+    accounts and reporting the result. It is <strong>not</strong> used for advertising, marketing, profiling, analytics,
+    credit or lending decisions, and it is not used to develop, improve or train artificial intelligence or machine
+    learning models. Nobody reads the data except the BEYOND FRAME team member operating the app, and only to publish
+    and check the team's own videos.</p>
+
+  <h2>4. Storage and security</h2>
+  <ul>
+    <li>OAuth tokens and app credentials are stored only on the team's computer, encrypted in the macOS Keychain.</li>
+    <li>Upload records (video ids, links, statuses) are stored in local files on the same computer.</li>
+    <li>No data is stored on any BEYOND FRAME server or third-party storage. Logs are written locally with tokens
+      removed.</li>
+    <li>All communication with Google, Meta and TikTok uses HTTPS.</li>
+  </ul>
+
+  <h2>5. Sharing and transfer</h2>
+  <p>We do not sell, rent, share or transfer user data to any third party. Data received from a platform is sent back
+    only to that same platform as part of the upload (for example, the video and its title are sent to YouTube). Data
+    received from Google APIs is never transferred to Meta, TikTok or anyone else.</p>
+
+  <h2>6. Google API Services User Data Policy (Limited Use)</h2>
+  <p>BEYOND FRAME's use and transfer of information received from Google APIs to any other app will adhere to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    including the Limited Use requirements.</p>
+  <p>The app uses YouTube API Services. By using the app you agree to be bound by the
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See also the
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>7. Retention and deletion</h2>
+  <ul>
+    <li>OAuth tokens are kept until the account is disconnected in the app (“Disconnect”), which deletes them from the
+      Keychain immediately.</li>
+    <li>Upload records are kept as the team's publishing history and are deleted together with the video's folder.</li>
+    <li>Access can be revoked at any time: Google — <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>;
+      Meta — Facebook Settings → Business integrations; TikTok — Settings and privacy → Security → Manage app permissions.
+      After revocation the app can no longer access the account.</li>
+    <li>To request deletion of any data held by the app, contact us (below); it will be deleted within 30 days.</li>
+  </ul>
+
+  <h2>8. Children</h2>
+  <p>The app is not directed to children and does not knowingly process children's data.</p>
+
+  <h2>9. Changes</h2>
+  <p>Changes to this policy are published on this page with a new effective date.</p>
+
+  <h2>10. Contact</h2>
+  <p><a href="https://github.com/dclxxxvi/dclxxxvi.github.io/issues">github.com/dclxxxvi/dclxxxvi.github.io/issues</a></p>
+</main>
+</body>
+</html>
