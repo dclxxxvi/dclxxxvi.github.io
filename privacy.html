@@ -14,8 +14,8 @@
 
   <p>This Privacy Policy describes how the <strong>BEYOND FRAME</strong> application (“the app”, “we”) accesses,
     uses, stores, shares and deletes data, including data received from Google APIs. The app is a desktop application
-    used by the BEYOND FRAME team to publish its own 3D animated videos to its own YouTube channel, Instagram account
-    and TikTok account after a person reviews and confirms each upload.</p>
+    used by the BEYOND FRAME team to publish its own 3D animated videos to its own YouTube channel, Instagram account,
+    TikTok account and VK community after a person reviews and confirms each upload.</p>
 
   <h2>1. Who the app is for</h2>
   <p>The app is used only by the BEYOND FRAME team with accounts the team owns. It has no public sign-up, no user
@@ -30,7 +30,7 @@
       <td>Permission to upload videos to the connected channel, and the id of each uploaded video</td>
       <td>To upload the video file with the title, description, tags and privacy setting the person confirmed</td></tr>
     <tr><td><code>https://www.googleapis.com/auth/youtube.readonly</code></td>
-      <td>The connected channel's id and title; the upload/processing status, privacy status and statistics (view, like
+      <td>The connected channel's id and title and its subscriber, view and video counts; the upload/processing status, privacy status and statistics (view, like
         and comment counts) of videos the app uploaded</td>
       <td>To show which channel is connected, whether each upload finished processing, the link to the video and how it
         performs</td></tr>
@@ -43,20 +43,29 @@
       <td>To make the API calls above without asking the owner to sign in every time</td></tr>
   </table>
   <p>The app does <strong>not</strong> access the Google account's e-mail, contacts, profile details beyond the
-    channel title, other videos, the content of comments, playlists, subscribers, watch history or YouTube Analytics
+    channel title, other videos, the content of comments, playlists, the list of subscribers, watch history or YouTube Analytics
     reports.</p>
 
   <h3>Meta (Instagram) data</h3>
   <p>The list of Facebook Pages managed by the signed-in owner, the id and username of the Instagram professional
-    account linked to the chosen Page, a Page access token, the ids/links of media the app published, and the like,
+    account linked to the chosen Page and its follower, following and media counts, a Page access token, the ids/links of media the app published, and the like,
     comment, view, reach, save and share counts of those media — used only to publish the confirmed Reel, show its
     link and statistics, and delete a Reel the app published when the person clicks “Delete” and confirms it.</p>
 
   <h3>TikTok data</h3>
   <p>The account's open id and display name and OAuth tokens — used only to send the confirmed video to the
-    account's TikTok inbox as a draft and show the upload status. With <code>video.list</code> the app reads the
+    account's TikTok inbox as a draft and show the upload status. With <code>user.info.stats</code> the app reads the
+    account's follower, following, like and video counts, only to show them to the team. With <code>video.list</code> the app reads the
     account's recent public videos (id, caption, link) and the view, like, comment and share counts of the videos it
     uploaded, only to show their statistics.</p>
+
+  <h3>VK data</h3>
+  <p>Through VK ID, with the accesses <code>video</code>, <code>wall</code> and <code>groups</code>: the VK ID tokens and
+    device id, the signed-in user's id, the id, name, address and member count of the one community the team
+    configured (and whether the user administers it), and the ids, links and view, like, comment and repost counts
+    of the videos the app uploaded — used only to upload the confirmed video to that community (with a wall post when
+    chosen), show its link and statistics, and delete a video the app uploaded when the person clicks “Delete” and
+    confirms it.</p>
 
   <h3>Files</h3>
   <p>The video files and texts (title, description, hashtags) that the team prepared for publishing.</p>
